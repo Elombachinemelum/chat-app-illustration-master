@@ -1,0 +1,263 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: 'Rubik' , sans-serif;
+  background-color: #f3f3f3;
+}
+.overall-container{
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.inner-grid-container{
+  padding: 0 18%;
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+  align-content: center;
+  gap:0;
+}
+
+.flex-container{
+  /* ended up using grid instead */
+
+}
+/* ****************************Inside container a*************************** */
+
+.container-a{
+  background-color: hsl(270, 20%, 96%);
+  width: 68%;
+  position: relative;
+  border: 10px solid hsl(0, 0%, 100%) ;
+  border-radius: 30px;
+  margin: 0;
+}
+
+.one{
+  position: relative;
+  background-image: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  min-height: 50px;
+  color: hsl(0, 0%, 100%);
+  padding: 2rem 2.5rem 0 2rem;
+  border-radius: 20px 20px 0 0;
+}
+.avatar-name{
+  display: inline-block;
+  margin-left: 6px;
+}
+.avatar-name p{
+  margin:4px 0 15px 0;
+  font-size: 10px;
+  opacity: .5;
+  font-weight: 400;
+}
+
+.one::before{
+  content: "";
+  width: 60%;
+  margin: 0;
+  background-color: hsl(0, 0%, 100%);
+  height: 30px;
+  border-radius: 0 0 16px 16px;
+  z-index: 3;
+  position: absolute;
+  top:0;
+  right: 20%;
+}
+.one img{
+  width:30px;
+  border: 1px #f3f3f3 solid;
+  border-radius: 100%;
+  margin-top: 5px;
+}
+.one h4{
+  margin:15px 0 2px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+/* ***********************inside chat space********************************** */
+.left-chat{
+  background-color: hsl(270, 7%, 90%);
+  color:hsl(276, 55%, 52%);
+  border-radius: 1rem 1rem 1rem 4px;
+  font-size: 13px;
+  padding:3% 7%;
+  width: 60%;
+  margin:0 0 10px 12px;
+  clear: both;
+}
+.left-chat-gradient{
+  background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  position: relative;
+  color:hsl(0, 0%, 100%);
+  border-radius: 1rem 1rem 1rem 4px;
+  font-size: 14px;
+  padding:3% 7%;
+  width: 60%;
+  margin:0 0 12px 12px;
+}
+.left-chat-gradient::before{
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  border: solid 1px hsl(0, 0%, 100%);
+  border-radius: 100%;
+  left: 4%;
+  top: 0.75rem;
+  background-color: hsl(293, 100%, 63%);
+  opacity: .5;
+}
+.left-chat-gradient span{
+  position: absolute;
+  right:10%;
+  font-weight: 600;
+  opacity: .9;
+}
+.left-chat-gradient p{
+  margin:0 0 0 7%;
+  font-size: 10px;
+  opacity: .8;
+  display: inline-block;
+
+}
+.container-a .left-chat:nth-child(2){
+  margin-top: 10px;
+}
+
+.left-chat p{
+  margin:0;
+}
+
+.dog-images{
+  direction: rtl; /*this can aslo be set in the html attribute as dir="rtl"*/
+}
+.dog-images .dog-image{
+  width: 50px;
+  border-radius: 10px;
+  margin:0 0 6px 7px;
+
+}
+.dog-images .dog-image:first-child{
+  margin-right: 12px;
+}
+
+.right-chat{
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(271, 15%, 43%);
+  border-radius: 1rem 1rem 4px 1rem;
+  font-size: 13px;
+  padding:3% 7%;
+  width: 60%;
+  margin:0 12px 10px 0;
+  float: right;
+}
+.right-chat p{
+  margin: 0;
+}
+
+.text-field{
+  position: relative;
+  background-color: hsl(270, 20%, 96%);
+  color: hsl(206, 6%, 79%);
+  padding: 1rem .5rem 1rem .5rem;
+  border-radius: 0 0 65px 65px;
+}
+.text-field p{
+  margin:0;
+  background-color: hsl(0, 0%, 100%);
+  width: 88%;
+  margin:0 auto ;
+  border-radius: 16px;
+  font-size: 12px;
+  padding: 10px 5px 13px 20px;
+  position: relative;
+}
+.text-field .black-arrow{
+  font-size: 1.9rem;
+  color: hsl(0, 0%, 20%);
+  float: right;
+  margin:0 .1rem 0 0;
+  position: relative;
+  bottom: 6px;
+}
+/* ************************end of chat section****************************** */
+
+/*************************** end of container a section*************************************** */
+.container-b{
+  padding: 36% 0 0;
+  margin: 0;
+}
+
+.container-b p{
+  color : hsl(270, 7%, 64%);
+  line-height: 2;
+}
+.container-b h3{
+  color: hsl(271, 36%, 24%);
+  font-size: 3rem;
+  font-weight: 500;
+}
+.overall-container .big-side-bar{
+  position: absolute;
+  height: 85vh;
+  background-image: linear-gradient( hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  width: 30rem;
+  border-radius: 0 0 50% 50%;
+  left: -7.5rem;
+  opacity: .9;
+}
+.big-side-bar-right{
+  position: absolute;
+  height: 85vh;
+  background-image: linear-gradient( hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  width: 30rem;
+  border-radius: 50% 50% 0 0;
+  opacity: .04;
+  right: -11.25rem;
+  bottom: 0;
+}
+.attribution a{
+  text-decoration: none;
+}
+.attribution a:last-child{
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-left: 5px;
+}
+
+/**************************** responsive section****************************** */
+
+@media screen and (max-width: 1125px) {
+  .inner-grid-container{
+    grid-template-columns: 1fr;
+    padding: 5% 6%;
+    height: auto;
+  }
+  .container-a{
+    padding: 0;
+    margin:0;
+    width: auto;
+  }
+  .phone-container{
+    padding:0 3%;
+  }
+  .container-b{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .overall-container .big-side-bar{
+    left:-10rem;
+    width: 25rem;
+  }
+  .attribution{
+    padding-bottom: 12px;
+  }
+}
